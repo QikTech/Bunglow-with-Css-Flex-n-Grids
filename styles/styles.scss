@@ -1,0 +1,45 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    // color: white;
+    font-family: 'lobster', cursive;
+}
+
+h1{
+    font-size: 4rem;
+    font-family: 'Sansita Swashed', cursive;
+//    font-weight: lighter;
+}
+
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+@import "home";
+@import "gallery";
