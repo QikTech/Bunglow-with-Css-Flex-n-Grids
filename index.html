@@ -6,37 +6,31 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&family=Suez+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <div class="nav-container">
-            <nav>
-             
-                <h1 class="logo">Vandana Bunglow</h1>
-                    <ul>
-                        <li class="nav-items1"><a href="#">Photo Gallery</a></li>
-                        <li class="nav-items2"><a href="#">Location</a></li>
-                        <li class="nav-items3"><a href="#">Contact</a></li>
-                        <li class="nav-items4"><a href="#">Nearby Places</a></li>
-                    </ul>
-            </nav>
-        </div>
-
-        <section class="home">
-            <div class="banner1">
-                <!-- <h2>Home for your Vacations</h2> -->
-                <img class="Banner1-img" src="/images/banglow1.jpg" alt="">
+    <!-- <main> -->
+    <section class="nav-container">
+        
+            <div class="navbar">
+                <h1 id="logo">Vandana Bunglow</h1>
+                <li class="nav-items1"><a href="#1">Photo Gallery</a></li>
+                <li class="nav-items2"><a href="#">Location</a></li>
+                <li class="nav-items3"><a href="#">Contact</a></li>
+                <li class="nav-items4"><a href="#">Nearby Places</a></li>
             </div>
-        </section>
+        
+    </section>
+        
 
 
 <!-- GallerySection -->
 
 
-<section class="gallery"> 
-        <!-- <h1 class="photo-txt">Photo Gallery</h1>
+<!-- <section class="gallery"> 
+        <h1 class="photo-txt">Photo Gallery</h1>
         <div class="div-gallery">
                 <div 
                     class="card " 
@@ -93,19 +87,17 @@
                     9
                 </div>
 
-        </div> -->
+        </div>
 
        
 
-    </section>
+    </section> -->
 
 
 
 <!-- GallerySection2 -->
-    <section class="gallery2">
+    <section class="gallery2" id="1">
 
-        <!-- <div class="message"> Interactive! Tap a picture to enlarge, tap again to close<br>
-            Made by <a href="https://codepen.io/pieter-biesemans/" target="_blank" title="check out my other work">Pieter Biesemans </a>with &#9749;, &#128420; &amp; &#8986;</div> -->
           <div class="container"><input id="item1" type="checkbox" />
             <label class="item1" for="item1" style="background-image:url(https://picsum.photos/750/750?image=501);"></label>
             <input id="item2" type="checkbox" /><label class="item2" for="item2" style="background-image:url(https://picsum.photos/750/750?image=502);"></label>
@@ -120,6 +112,11 @@
 
     </section>
 
-    </main>
+
+<!-- NearbySection -->
+<section class="nearby"></section>
+
+<!-- ContactSection -->
+<section class="contact"></section>
 </body>
 </html>

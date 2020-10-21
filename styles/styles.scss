@@ -1,6 +1,9 @@
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
+
+
 
 *{
     margin: 0;
@@ -16,7 +19,8 @@ body{
 h1{
     font-size: 4rem;
     font-family: 'Sansita Swashed', cursive;
-//    font-weight: lighter;
+    font-family: 'Suez One', serif;
+   font-weight: lighter;
 }
 
 
@@ -42,5 +46,7 @@ ul{
 }
 
 @import "home";
-@import "gallery";
-@import "gallery2"
+// @import "gallery";
+@import "gallery2";
+@import "nearby";
+@import "contact";
