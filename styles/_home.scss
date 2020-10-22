@@ -1,58 +1,6 @@
-.nav-container {
-    
-    min-height: 90vh;
+.home{
+    min-height: 100vh;
     background: #011627;
-}
-
-div.navbar{
-    position: fixed;
-    top: 0;
-    z-index: 1;
-   
-}
-.navbar{
-    position: absolute;
-    // min-height: 10vh;
-    min-width: 100vw;
-    background: #ff9f1c;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    object-fit: cover;
-    justify-content: space-around;
-    
-}
-
-#logo{
-    
-    flex: 3;
-    // min-height: 10vh;
-}
-
-li{
-    
-    font-size: 1.5rem;
-    color: aliceblue;
-    list-style-type: none;
-    align-self: center;
-    flex: 1;
-    
-}
-
-a{
-    padding: 10px;
-    border: 2px;
-    border-color: #ffffff;
-border-style: solid;
-border-radius: 4px;
-// font-size:12px;
-}
-
-.nav-items1:hover, .nav-items2:hover, .nav-items3:hover,.nav-items4:hover, .nav-items5:hover{
-    transition: 0.5s;
-     cursor: pointer;
-     filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
-     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
