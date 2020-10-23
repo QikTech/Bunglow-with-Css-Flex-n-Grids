@@ -173,8 +173,44 @@ body .container input:checked + [class*='item'] {
 }
 
 .nearby {
-  min-height: 90vh;
+  min-height: 100vh;
   background: #e71d36;
+}
+
+.nearby-sections {
+  margin-top: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+}
+
+.map {
+  background: #fafafa;
+  width: 40vw;
+  height: 80vh;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.map .location-txt {
+  margin-top: 5%;
+  color: #333;
+}
+
+.map .map-api {
+  position: absolute;
+  -webkit-filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
+  margin: 5% 5% 5% 5%;
+  width: 50%;
+  height: 50%;
+}
+
+.nearby-locations {
+  width: 60vw;
+  text-align: center;
 }
 
 .contact {
@@ -198,7 +234,7 @@ body .container input:checked + [class*='item'] {
 }
 
 .nav-container h2 {
-  margin-left: 20%;
+  margin-left: 15%;
   font-family: 'Merienda', cursive;
   font-size: 3rem;
 }
