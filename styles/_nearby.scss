@@ -1,82 +1,201 @@
 .nearby{
     min-height: 100vh;
-    // background: #e71d36;
-    // box-sizing: border-box;
-    
+    background: #db162f;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
 }
 
-.nearby-sections{
-    margin-top: 15vh;
-    display: flex;
-    
-    height: 80vh;
-}
+.nearby ::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  .nearby ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  .nearby ::-webkit-scrollbar-thumb {
+    background-color: #333;
+    outline: 1px solid slategrey;
+  }
 
 .map{
-    
-    background: #fafafa;
-    margin-left: 2%;
-    width: 40vw;
-    height: 80vh;
-    text-align: center;
-    border-radius: 10px;
-    position: relative;
-
-
-    .location-txt{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    overflow: hidden;
+    background: #fdfffc;
+    margin: 9% 3% 3% 3%;
+    border-radius: 5px;
+    height: 75vh;
+    .itemstxt{
+        text-align: center;
+        width: 100%;
+        height: 10%;
         font-family: 'Merienda', cursive;
+         filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
+         font-size: 3rem;
+         margin-top: 7%;
+         color: #db162f;
+    }
+    .mapp{
+        margin-top: 6%;
+        border-radius: 5px;
+    }
+    .mapp :hover, .itemstxt :hover{
         filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
-        font-size: 3rem;
-        margin-top: 5%;
-        color: #333;
-    }
-
-    .map-api{
-        position: absolute;
-        
-        filter: drop-shadow(14px 14px 13px rgba(0, 0, 0, 0.2));
-    //    margin: 5% 5% 5% 5%;
-    margin-left: 15%;
-    margin-top: 8%;
-       width: 70%;
-       height: 70%;
-       
-    }
-}
-
-
-
-.nearby-locations{
-
-    // background: #ff9f1c;
-    width: 60vw;
-    text-align: center;
-    border-radius: 10px;
-    margin-left: 1%;
-    margin-right: 2%;
-    
-
-    .location-txt{
-        font-family: 'Merienda', cursive;
-        color: #333;
-        filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
-        font-size: 3rem;
-        margin-top: 2%;
-    }
-  
+        }
 }
 
 
 .minigallery{
+    flex: 2;
     display: flex;
-}
-.nearby-photo1{
-    flex: 1;
-    .nearby-img1{
-        width: 50%;
-        height: 50%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    background: #fdfffc;
+    margin: 9% 3% 3% 3%;
+    border-radius: 5px;
+    height: 75vh;
+    overflow: scroll;
+    overflow-y:auto;
+    position: relative;
+    .cardtitle{
+        position: sticky;
     }
+    .itemstxt {
+        text-align: center;
+        width: 100%;
+        height: 10%;
+        font-family: 'Merienda', cursive;
+         font-size: 3rem;
+         margin-top: 2%;
+         color: #333;
+         filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
+         position: sticky;
+    }
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        // justify-items: flex-start;
+        margin: 2% 5% 5% 5%;
+        justify-content: center;
+        align-items: center;
+        filter: drop-shadow(0px 14px 30px rgba(0, 0, 0, 0.2));
+        }
+        .cardimg{
+            margin-top: 2%;
+            width: 30%;
+            // filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.2));
+        }
+        .cardtxt{
+            margin: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            // justify-items: flex-start;
+            align-items: center;
+        }
+        .cardh{
+            font-family: 'Comic Neue', cursive;
+            font-size: 2rem;
+            color: #333;
+            filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
+        }
+        .cardp{
+            margin-top: 10%;
+            font-family: 'Comic Neue', cursive;
+            font-weight: 300;
+            color: #333;
+            font-size: 1.5rem;
+            overflow: hidden;
+        }
 }
+
+
+
+// .nearby{
+//     min-height: 100vh;
+//     // background: #e71d36;
+//     // box-sizing: border-box;
+    
+// }
+
+// .nearby-sections{
+//     margin-top: 15vh;
+//     display: flex;
+    
+//     height: 80vh;
+// }
+
+// .map{
+    
+//     background: #fafafa;
+//     margin-left: 2%;
+//     width: 40vw;
+//     height: 80vh;
+//     text-align: center;
+//     border-radius: 10px;
+//     position: relative;
+
+
+//     .location-txt{
+//         font-family: 'Merienda', cursive;
+//         filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
+//         font-size: 3rem;
+//         margin-top: 5%;
+//         color: #333;
+//     }
+
+//     .map-api{
+//         position: absolute;
+        
+//         filter: drop-shadow(14px 14px 13px rgba(0, 0, 0, 0.2));
+//     //    margin: 5% 5% 5% 5%;
+//     margin-left: 15%;
+//     margin-top: 8%;
+//        width: 70%;
+//        height: 70%;
+       
+//     }
+// }
+
+
+
+// .nearby-locations{
+
+//     // background: #ff9f1c;
+//     width: 60vw;
+//     text-align: center;
+//     border-radius: 10px;
+//     margin-left: 1%;
+//     margin-right: 2%;
+    
+
+//     .location-txt{
+//         font-family: 'Merienda', cursive;
+//         color: #333;
+//         filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
+//         font-size: 3rem;
+//         margin-top: 2%;
+//     }
+  
+// }
+
+
+// .minigallery{
+//     display: flex;
+// }
+// .nearby-photo1{
+//     flex: 1;
+//     .nearby-img1{
+//         width: 50%;
+//         height: 50%;
+//     }
+// }
 
 
         

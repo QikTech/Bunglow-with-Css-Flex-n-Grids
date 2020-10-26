@@ -67,7 +67,16 @@ ul {
   position: relative;
 }
 
-div, label {
+label {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -189,77 +198,168 @@ body .container input:checked + [class*='item'] {
 
 .nearby {
   min-height: 100vh;
-}
-
-.nearby-sections {
-  margin-top: 15vh;
+  background: #db162f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+.nearby ::-webkit-scrollbar {
+  width: 1em;
+}
+
+.nearby ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.nearby ::-webkit-scrollbar-thumb {
+  background-color: #333;
+  outline: 1px solid slategrey;
 }
 
 .map {
-  background: #fafafa;
-  margin-left: 2%;
-  width: 40vw;
-  height: 80vh;
-  text-align: center;
-  border-radius: 10px;
-  position: relative;
-}
-
-.map .location-txt {
-  font-family: 'Merienda', cursive;
-  -webkit-filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
-          filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
-  font-size: 3rem;
-  margin-top: 5%;
-  color: #333;
-}
-
-.map .map-api {
-  position: absolute;
-  -webkit-filter: drop-shadow(14px 14px 13px rgba(0, 0, 0, 0.2));
-          filter: drop-shadow(14px 14px 13px rgba(0, 0, 0, 0.2));
-  margin-left: 15%;
-  margin-top: 8%;
-  width: 70%;
-  height: 70%;
-}
-
-.nearby-locations {
-  width: 60vw;
-  text-align: center;
-  border-radius: 10px;
-  margin-left: 1%;
-  margin-right: 2%;
-}
-
-.nearby-locations .location-txt {
-  font-family: 'Merienda', cursive;
-  color: #333;
-  -webkit-filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
-          filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
-  font-size: 3rem;
-  margin-top: 2%;
-}
-
-.minigallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nearby-photo1 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  overflow: hidden;
+  background: #fdfffc;
+  margin: 9% 3% 3% 3%;
+  border-radius: 5px;
+  height: 75vh;
 }
 
-.nearby-photo1 .nearby-img1 {
-  width: 50%;
-  height: 50%;
+.map .itemstxt {
+  text-align: center;
+  width: 100%;
+  height: 10%;
+  font-family: 'Merienda', cursive;
+  -webkit-filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
+  font-size: 3rem;
+  margin-top: 7%;
+  color: #db162f;
+}
+
+.map .mapp {
+  margin-top: 6%;
+  border-radius: 5px;
+}
+
+.map .mapp :hover, .map .itemstxt :hover {
+  -webkit-filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
+}
+
+.minigallery {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  background: #fdfffc;
+  margin: 9% 3% 3% 3%;
+  border-radius: 5px;
+  height: 75vh;
+  overflow: scroll;
+  overflow-y: auto;
+  position: relative;
+}
+
+.minigallery .cardtitle {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.minigallery .itemstxt {
+  text-align: center;
+  width: 100%;
+  height: 10%;
+  font-family: 'Merienda', cursive;
+  font-size: 3rem;
+  margin-top: 2%;
+  color: #333;
+  -webkit-filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.minigallery .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2% 5% 5% 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-filter: drop-shadow(0px 14px 30px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0px 14px 30px rgba(0, 0, 0, 0.2));
+}
+
+.minigallery .cardimg {
+  margin-top: 2%;
+  width: 30%;
+}
+
+.minigallery .cardtxt {
+  margin: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.minigallery .cardh {
+  font-family: 'Comic Neue', cursive;
+  font-size: 2rem;
+  color: #333;
+  -webkit-filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
+}
+
+.minigallery .cardp {
+  margin-top: 10%;
+  font-family: 'Comic Neue', cursive;
+  font-weight: 300;
+  color: #333;
+  font-size: 1.5rem;
+  overflow: hidden;
 }
 
 .contact {
