@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
     <link rel="stylesheet" href="/styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
     <!-- <main> -->
@@ -27,7 +27,7 @@
     </section>
 
 <!-- GallerySection2 -->
-    <!-- <section class="gallery2" id="2">
+   <section class="gallery2" id="2"> 
           <div class="container divv"><input id="item1" type="checkbox" />
             <label class="item1" for="item1" style="background-image:url(https://picsum.photos/750/750?image=501);"></label>
             <input id="item2" type="checkbox" /><label class="item2" for="item2" style="background-image:url(https://picsum.photos/750/750?image=502);"></label>
@@ -39,7 +39,7 @@
             <input id="item8" type="checkbox" /><label class="item8" for="item8" style="background-image:url(https://picsum.photos/750/750?image=508);"></label>
             <input id="item9" type="checkbox" /><label class="item9" for="item9" style="background-image:url(https://picsum.photos/750/750?image=509);"></label>
         </div>
-    </section> -->
+    </section>
 
 
 
@@ -49,7 +49,7 @@
                 <h1 class="itemstxt">Located at</h1>
             </div>
             <div class="mapp"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30299.1175265522!2d72.94180888185231!3d18.32949788976063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be84391b2fcfb77%3A0x62c7f6d33c9f6f9!2sMurud%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1603444069504!5m2!1sen!2sin" 
-                width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                width="280" height="280" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
     </div>
     <div class="items, minigallery">
@@ -82,6 +82,64 @@ in the Raigad district of Maharashtra</pre>
 </section>
 
 <!-- ContactSection -->
-<section class="contact" id="4"></section>
+<section class="contact" id="4">
+
+    <h3>Contact Form</h3>
+    <div>
+        <div class="containerr">
+        <form method="psot" .onsubmit="return.check();">
+        <!-- <label for="fname">Full Name</label> -->
+        <h4>Full name</h4>
+        <input type="text" id="name" name="firstname" placeholder="Full Name">
+            
+        <!-- <label for="email">Enter your email:</label> -->
+        <h4>Enter your email:</h4>
+         <input type="email" id="email" name="email" id="email" placeholder="Your email">
+            
+        <h4>Your City</h4>
+        <input type="text" id="cityname" name="lastname" placeholder="city name">
+            
+        <!-- <label for="country">Looking for</label> -->
+        <h4>Looking for</h4>
+        <select id="message" name="country">
+        <option value="1day">1 Day</option>
+        <option value="2day">2 Days</option>
+        <option value="3day">3 Days</option>
+        <option value="4day">4 Days</option>
+        <option value="5day">5 Days</option>
+        <option value="6day">6 Days</option>
+        <option value="7day">1 Week</option>
+        <option value="more">More than a week</option>
+        </select>
+        <br>
+        <!-- <input type="button" value="Send Email" online="sendEmail()"/> -->
+        <button type="submit" onclick="send(event)">submit</button>
+        </form>
+        
+        </div>
+    </div>
+        <script>
+            function send(event){
+                event.preventDefault();
+                Email.send({
+                    name:document.getElementById('name').value,
+                    Host     : "smtp.gmail.com",
+                    Username : "keyy007.kk@gmail.com",
+                    Password : "ketankkk",
+                    To       : 'keyy007.kk@gmail.com',
+                    From     : document.getElementById('email').value,
+                    Subject  : document.getElementById('subject').value,
+                    Body     : document.getElementById('message').value,
+                }).then(function(response){
+                    if (response == 'OK') {
+                        alert("Enquiery Sent")
+                    } 
+                    else {
+                        throw new Error("Error:" + response.statusText);
+                    }
+                });
+            }
+            </script>
+</section>
 </body>
 </html>

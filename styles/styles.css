@@ -251,11 +251,11 @@ body .container input:checked + [class*='item'] {
           filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
   font-size: 3rem;
   margin-top: 7%;
-  color: #db162f;
+  color: #333;
 }
 
 .map .mapp {
-  margin-top: 6%;
+  margin-top: 10%;
   border-radius: 5px;
 }
 
@@ -288,11 +288,6 @@ body .container input:checked + [class*='item'] {
   position: relative;
 }
 
-.minigallery .cardtitle {
-  position: -webkit-sticky;
-  position: sticky;
-}
-
 .minigallery .itemstxt {
   text-align: center;
   width: 100%;
@@ -305,6 +300,9 @@ body .container input:checked + [class*='item'] {
           filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
   position: -webkit-sticky;
   position: sticky;
+  top: 1rem;
+  z-index: 1;
+  background: #fdfffc;
 }
 
 .minigallery .card {
@@ -347,8 +345,8 @@ body .container input:checked + [class*='item'] {
 
 .minigallery .cardh {
   font-family: 'Comic Neue', cursive;
-  font-size: 2rem;
-  color: #333;
+  font-size: 2.5rem;
+  color: #db162f;
   -webkit-filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
           filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
 }
@@ -357,14 +355,69 @@ body .container input:checked + [class*='item'] {
   margin-top: 10%;
   font-family: 'Comic Neue', cursive;
   font-weight: 300;
-  color: #333;
+  color: grey;
   font-size: 1.5rem;
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .nearby {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contact {
+  margin-top: 20%;
   min-height: 90vh;
   background: #011627;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+input[type=text], [type=email], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.containerr {
+  font-size: 3rem;
+  margin: auto;
+  width: 60%;
+  border-radius: 5px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .nav-container {

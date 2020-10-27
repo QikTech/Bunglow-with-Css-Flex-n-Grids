@@ -38,10 +38,10 @@
          filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
          font-size: 3rem;
          margin-top: 7%;
-         color: #db162f;
+         color: #333;
     }
     .mapp{
-        margin-top: 6%;
+        margin-top: 10%;
         border-radius: 5px;
     }
     .mapp :hover, .itemstxt :hover{
@@ -64,7 +64,8 @@
     overflow-y:auto;
     position: relative;
     .cardtitle{
-        position: sticky;
+        
+
     }
     .itemstxt {
         text-align: center;
@@ -72,10 +73,13 @@
         height: 10%;
         font-family: 'Merienda', cursive;
          font-size: 3rem;
-         margin-top: 2%;
+        margin-top: 2%;          
          color: #333;
          filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
          position: sticky;
+         top: 1rem;
+         z-index: 1;
+         background: #fdfffc;
     }
     .card{
         display: flex;
@@ -101,102 +105,23 @@
         }
         .cardh{
             font-family: 'Comic Neue', cursive;
-            font-size: 2rem;
-            color: #333;
+            font-size: 2.5rem;
+            color: #db162f;
             filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
         }
         .cardp{
             margin-top: 10%;
             font-family: 'Comic Neue', cursive;
             font-weight: 300;
-            color: #333;
+            color: grey;
             font-size: 1.5rem;
             overflow: hidden;
         }
 }
 
 
-
-// .nearby{
-//     min-height: 100vh;
-//     // background: #e71d36;
-//     // box-sizing: border-box;
-    
-// }
-
-// .nearby-sections{
-//     margin-top: 15vh;
-//     display: flex;
-    
-//     height: 80vh;
-// }
-
-// .map{
-    
-//     background: #fafafa;
-//     margin-left: 2%;
-//     width: 40vw;
-//     height: 80vh;
-//     text-align: center;
-//     border-radius: 10px;
-//     position: relative;
-
-
-//     .location-txt{
-//         font-family: 'Merienda', cursive;
-//         filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
-//         font-size: 3rem;
-//         margin-top: 5%;
-//         color: #333;
-//     }
-
-//     .map-api{
-//         position: absolute;
-        
-//         filter: drop-shadow(14px 14px 13px rgba(0, 0, 0, 0.2));
-//     //    margin: 5% 5% 5% 5%;
-//     margin-left: 15%;
-//     margin-top: 8%;
-//        width: 70%;
-//        height: 70%;
-       
-//     }
-// }
-
-
-
-// .nearby-locations{
-
-//     // background: #ff9f1c;
-//     width: 60vw;
-//     text-align: center;
-//     border-radius: 10px;
-//     margin-left: 1%;
-//     margin-right: 2%;
-    
-
-//     .location-txt{
-//         font-family: 'Merienda', cursive;
-//         color: #333;
-//         filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
-//         font-size: 3rem;
-//         margin-top: 2%;
-//     }
-  
-// }
-
-
-// .minigallery{
-//     display: flex;
-// }
-// .nearby-photo1{
-//     flex: 1;
-//     .nearby-img1{
-//         width: 50%;
-//         height: 50%;
-//     }
-// }
-
-
-        
-        
+@media (max-width: 768px) {
+    .nearby {
+        flex-direction: column;    
+    }
+}
