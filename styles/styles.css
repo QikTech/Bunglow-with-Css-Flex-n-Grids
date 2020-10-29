@@ -378,6 +378,10 @@ body {
   font-family: "Montserrat";
 }
 
+.enqtxt {
+  color: #011627;
+}
+
 .enq {
   height: 100vh;
   width: 100%;
