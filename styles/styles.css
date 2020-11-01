@@ -76,13 +76,12 @@ label {
   overflow: hidden;
 }
 
-.container {
+.gallerycontainer {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 body {
@@ -94,7 +93,6 @@ body {
   padding: 0;
   font-size: 1vmin;
   font-family: "Open Sans", sans-serif;
-  color: white;
 }
 
 body .message {
@@ -115,7 +113,7 @@ body .message a:hover {
   border-width: 3px;
 }
 
-body .container {
+body .gallerycontainer {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -124,7 +122,9 @@ body .container {
   height: 80em;
 }
 
-body .container [class*='item'] {
+body .gallerycontainer [class*='item'] {
+  background: white;
+  margin-top: 9%;
   width: 33%;
   height: 33%;
   border: 1px solid transparent;
@@ -134,61 +134,61 @@ body .container [class*='item'] {
   z-index: 0;
 }
 
-body .container [class*='item']:hover {
+body .gallerycontainer [class*='item']:hover {
   border: 1px solid white;
   z-index: 1;
 }
 
-body .container [class*='item']:nth-of-type(1) {
+body .gallerycontainer [class*='item']:nth-of-type(1) {
   top: 0;
   left: 0;
 }
 
-body .container [class*='item']:nth-of-type(2) {
+body .gallerycontainer [class*='item']:nth-of-type(2) {
   top: 0;
   left: 33%;
 }
 
-body .container [class*='item']:nth-of-type(3) {
+body .gallerycontainer [class*='item']:nth-of-type(3) {
   top: 0;
   left: 66%;
 }
 
-body .container [class*='item']:nth-of-type(4) {
+body .gallerycontainer [class*='item']:nth-of-type(4) {
   top: 33%;
   left: 0;
 }
 
-body .container [class*='item']:nth-of-type(5) {
+body .gallerycontainer [class*='item']:nth-of-type(5) {
   top: 33%;
   left: 33%;
 }
 
-body .container [class*='item']:nth-of-type(6) {
+body .gallerycontainer [class*='item']:nth-of-type(6) {
   top: 33%;
   left: 66%;
 }
 
-body .container [class*='item']:nth-of-type(7) {
+body .gallerycontainer [class*='item']:nth-of-type(7) {
   top: 66%;
   left: 0;
 }
 
-body .container [class*='item']:nth-of-type(8) {
+body .gallerycontainer [class*='item']:nth-of-type(8) {
   top: 66%;
   left: 33%;
 }
 
-body .container [class*='item']:nth-of-type(9) {
+body .gallerycontainer [class*='item']:nth-of-type(9) {
   top: 66%;
   left: 66%;
 }
 
-body .container input {
+body .gallerycontainer input {
   display: none;
 }
 
-body .container input:checked + [class*='item'] {
+body .gallerycontainer input:checked + [class*='item'] {
   top: 0;
   left: 0;
   width: 100%;
@@ -511,8 +511,6 @@ button[type="submit"]:hover {
   display: flex;
   background-color: #fafafa;
   padding: 10px;
-  -webkit-filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
-          filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
 }
 
 .nav-container h2 {
