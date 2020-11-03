@@ -1,6 +1,6 @@
 .contact{
     min-height: 90vh;
-    background: #011627;
+    background: #F2F6FF;
 }
 
 // label{
@@ -15,10 +15,14 @@
   body {
     font-family: "Montserrat";
   }
+  .contacttxt{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+  }
   .enq {
     height: 100vh;
     width: 100%;
-    background-color: aliceblue;
+    background-color: #F2F6FF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +34,7 @@
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0px 0px 20px #00000010;
-    background-color: white;
+    background-color: #F2F6FF;
     border-radius: 8px;
     margin-bottom: 20px;
   }
