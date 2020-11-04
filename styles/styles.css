@@ -440,6 +440,8 @@ button[type="submit"]:hover {
   display: flex;
   background-color: #F2F6FF;
   padding: 10px;
+  -webkit-filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
 }
 
 .nav-container h2 {
@@ -530,6 +532,10 @@ button[type="submit"]:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #F2F6FF;
 }
 
@@ -539,7 +545,7 @@ button[type="submit"]:hover {
           flex: 1;
   width: 100%;
   height: 100%;
-  margin: 2%;
+  margin-top: 7%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -547,16 +553,19 @@ button[type="submit"]:hover {
 }
 
 .itemstxt .nearbyh {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   font-family: 'Merienda', cursive;
   font-weight: 500;
-  font-size: 10rem;
+  font-size: 6.5vw;
 }
 
-.mapp {
+.itemstxt .nearbyp {
   font-family: 'Dosis', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 2vw;
-  color: #333;
+  color: grey;
 }
 
 .minigallery {
@@ -568,15 +577,23 @@ button[type="submit"]:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  margin-top: 15vh;
-  overflow-y: scroll;
-  height: 80vh;
-  margin-right: 9%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 3%;
   position: relative;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+.minigallery .c1, .minigallery .c2, .minigallery .c3, .minigallery .c4 {
+  margin: 2%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .minigallery .card {
@@ -589,21 +606,22 @@ button[type="submit"]:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background-color: #F2F6FF;
+  padding: 1vw;
 }
 
 .minigallery .cardimg {
+  margin-top: 2%;
   width: 30%;
   padding: 2% 0% 2% 0;
 }
 
 .minigallery .cardtxt {
-  margin: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -628,7 +646,7 @@ button[type="submit"]:hover {
 }
 
 .minigallery .cardp {
-  margin-top: 10%;
+  margin-top: 2%;
   font-family: 'Dosis', sans-serif;
   font-weight: 400;
   color: grey;
