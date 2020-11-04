@@ -1,54 +1,56 @@
-
 .nearbyplaces{
     min-height: 100vh;
-}
-.cardcontainer{
-    flex: 1;
-}
-.itemstxt {
-    text-align: center;
-    width: 100%;
-    height: 10%;
-    font-weight: 500;
-     font-size: 3rem;
-     margin-top: 2%;          
-     color: #333;
-     filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
-     position: sticky;
-     top: 0;
-     z-index: 1;
-     background: #fdfffc;
-}
-.minigallery{
-    // flex: 2;
     display: flex;
     flex-wrap: wrap;
-    // flex-direction: row;
-    align-content: flex-start;
-    background: #fdfffc;
-    margin: 9% 3% 3% 3%;
-    border-radius: 5px;
-    height: 75vh;
-    overflow: scroll;
-    overflow-y:auto;
-    position: relative;
-    .cardtitle{
-        
+    background-color: #F2F6FF;
+}
 
+.itemstxt{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    margin: 2%;
+    align-self: center;
+    text-align: center;
+    .nearbyh{
+        font-family: 'Merienda', cursive;
+        font-weight: 500;
+        font-size: 10rem;
     }
-   
+}
+.mapp{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 2vw;
+    color: #333;
+}
+.minigallery{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-top: 15vh;
+    overflow-y: scroll;
+    height: 80vh;
+    margin-right: 9%;
+    position: relative;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+
     .card{
         display: flex;
         flex-wrap: wrap;
-        // justify-items: flex-start;
-        margin: 2% 5% 5% 5%;
+        justify-items: flex-start;
+        // margin: 5% 5% 0% 0%;
         justify-content: center;
+        align-content: space-around;
         align-items: center;
-        filter: drop-shadow(0px 14px 30px rgba(0, 0, 0, 0.2));
+        background-color: #F2F6FF;
+        // filter: drop-shadow(0px 14px 30px rgba(0, 0, 0, 0.2));
         }
         .cardimg{
-            margin-top: 2%;
+            // margin-top: 2%;
             width: 30%;
+            padding: 2% 0% 2% 0 ;
             // filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.2));
         }
         .cardtxt{
@@ -57,7 +59,7 @@
             flex-wrap: wrap;
             flex-direction: column;
             // justify-items: flex-start;
-            align-items: center;
+            align-items: center; 
         }
         .cardh{
             font-family: 'Dosis', sans-serif;
@@ -75,20 +77,22 @@
             overflow: hidden;
         }
 }
-.nearby ::-webkit-scrollbar {
+
+.nearbyplaces ::-webkit-scrollbar {
     width: 1em;
   }
    
-  .nearby ::-webkit-scrollbar-track {
+  .nearbyplaces ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   }
    
-  .nearby ::-webkit-scrollbar-thumb {
+  .nearbyplaces ::-webkit-scrollbar-thumb {
     background-color: #333;
     outline: 1px solid slategrey;
   }
-@media (max-width: 768px) {
-    .nearby {
+
+   @media (max-width: 768px) {
+    .nearbyplaces {
         flex-direction: column;    
     }
 }
