@@ -1,27 +1,30 @@
 .nav-container{
-  // margin-left: 3%;
-  // border-radius: 20px;
-    font-size: 1.5rem;
-    position: fixed;
+    // font-size: 1.5rem;
+    position: sticky;
     top: 0;
     z-index: 3;
-    width: 100%;
+    width: 100vw;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     background-color: #F2F6FF;
     padding: 10px;
     filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
 
     h2{
-        margin-left: 15%;
         font-family: 'Merienda', cursive;
-        font-size: 2rem;
     }
 }
 
+.link{
+    font-size: 1.3rem;
+}
 .title{
     flex: 1;
+    font-size: 3rem;
     color: #020202;
     align-self: center;
+    text-align: center;
     filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
     
 }
@@ -39,6 +42,9 @@
   @media (max-width: 450px) {
     .navbar-menu {
       flex-direction: column;
+    }
+    .nav-container{
+      padding: 1px;
     }
   }
 

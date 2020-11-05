@@ -10,10 +10,12 @@
 </head>
 <body>
     <!-- <main> -->
+<!-- NAVIGATION BAR -->
+<main>
     <section class="nav-container" id="0">
         <h2 class="title">Vandana Bunglow</h2>
         <ul class="navbar-menu -material">
-             <li class="item"><a class="link" href="#1">home</a></li>
+             <li class="item"><a class="link" href="#1">Home</a></li>
              <li class="item"><a class="link" href="#2">Gallery</a></li>
              <li class="item"><a class="link" href="#3">Location</a></li>
              <li class="item"><a class="link" href="#4">Nearby Places</a></li>
@@ -23,35 +25,49 @@
     </section>
     <section class="home" id="1">
     </section>
+<!-- NEVAGATION BAR ENDS -->
 
-<!-- GallerySection2 -->
-   <section class="gallery2" id="2"> 
-          <div class="gallerytxt">
-            <h1 class="galleryh">Photo Gallery</h1>
-            <pre class="galleryp">Lorem ipsum dolor sit amet consectetur,
+<!-- GALLERY SECTION -->
+<section class="gallery2" id="2"> 
+  <div class="gallerytxt">
+    <h1 class="galleryh">Photo Gallery</h1>
+    <pre class="galleryp">Lorem ipsum dolor sit amet consectetur,
 adipisicing elit.
 Et enim ex dolorem dignissimos debitis,
 provident eveniet cum porro! Rem, nulla.</pre>
-        </div>
-        <div class="mimg">
-          <div class="gallerycontainer divv"><input id="item1" type="checkbox" />
-            <label class="item1" for="item1" style="background-image:url(https://picsum.photos/750/750?image=501);"></label>
-            <input id="item2" type="checkbox" /><label class="item2" for="item2" style="background-image:url(https://picsum.photos/750/750?image=502);"></label>
-            <input id="item3" type="checkbox" /><label class="item3" for="item3" style="background-image:url(https://picsum.photos/750/750?image=503);"></label>
-            <input id="item4" type="checkbox" /><label class="item4" for="item4" style="background-image:url(https://picsum.photos/750/750?image=504);"></label>
-            <input id="item5" type="checkbox" /><label class="item5" for="item5" style="background-image:url(https://picsum.photos/750/750?image=505);"></label>
-            <input id="item6" type="checkbox" /><label class="item6" for="item6" style="background-image:url(https://picsum.photos/750/750?image=506);"></label>
-            <input id="item7" type="checkbox" /><label class="item7" for="item7" style="background-image:url(https://picsum.photos/750/750?image=507);"></label>
-            <input id="item8" type="checkbox" /><label class="item8" for="item8" style="background-image:url(https://picsum.photos/750/750?image=508);"></label>
-            <input id="item9" type="checkbox" /><label class="item9" for="item9" style="background-image:url(https://picsum.photos/750/750?image=509);"></label>
-        </div>
-      </div>
-    </section>
+</div>
+<div class="mimg">
+  <div class="gallerycontainer divv"><input id="item1" type="checkbox" />
+    <label class="item1" for="item1" style="background-image:url(https://picsum.photos/750/750?image=501);"></label>
+    <input id="item2" type="checkbox" /><label class="item2" for="item2" style="background-image:url(https://picsum.photos/750/750?image=502);"></label>
+    <input id="item3" type="checkbox" /><label class="item3" for="item3" style="background-image:url(https://picsum.photos/750/750?image=503);"></label>
+    <input id="item4" type="checkbox" /><label class="item4" for="item4" style="background-image:url(https://picsum.photos/750/750?image=504);"></label>
+    <input id="item5" type="checkbox" /><label class="item5" for="item5" style="background-image:url(https://picsum.photos/750/750?image=505);"></label>
+    <input id="item6" type="checkbox" /><label class="item6" for="item6" style="background-image:url(https://picsum.photos/750/750?image=506);"></label>
+    <input id="item7" type="checkbox" /><label class="item7" for="item7" style="background-image:url(https://picsum.photos/750/750?image=507);"></label>
+    <input id="item8" type="checkbox" /><label class="item8" for="item8" style="background-image:url(https://picsum.photos/750/750?image=508);"></label>
+    <input id="item9" type="checkbox" /><label class="item9" for="item9" style="background-image:url(https://picsum.photos/750/750?image=509);"></label>
+</div>
+</div>
+</section>
+<!-- GALLERY SECTION ENDS -->
 
 <!-- LOCATION SECTION -->
 <section class="location" id=3>
-        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30299.1175265522!2d72.94180888185231!3d18.32949788976063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be84391b2fcfb77%3A0x62c7f6d33c9f6f9!2sMurud%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1603444069504!5m2!1sen!2sin" 
-            width="500" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div id="map" class="map">
+          <Script>
+            function initMap(){
+              var options = {
+                zoom:10,
+                center:{lat:17.7771,lng:73.1187}
+              }
+              var map = new google.maps.Map(document.getElementById('map'), options);
+            }
+          </Script>
+          <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASx2V6CA7vXhR00gOqPYYc54cdhpWrxko&callback=initMap&libraries=&v=weekly"
+          defer
+        ></script>
         </div> 
         <div class="mtxt">
               <h1 class="maptxt">Located at</h1>
@@ -61,6 +77,7 @@ Et enim ex dolorem dignissimos debitis,
 provident eveniet cum porro! Rem, nulla.</pre>
        </div>  
 </section>
+<!-- LOCATION ENDS -->
 
 <!-- NEARBY PLACES SECTION -->
 <section class="nearbyplaces" id="4">
@@ -98,8 +115,11 @@ provident eveniet cum porro! Rem, nulla.</pre>
 
 <!-- ContactSection -->
 <section class="contact" id="5">
-    <h3 class="contacttxt">Contact Form</h3>
-    <section>
+  <div class="contactxt">
+    <h3 class="contacth">Contact Form</h3>
+  </div>
+    
+  <div class="contactsections"></div>
         <div class="enq">
           <form action="https://formspree.io/f/mgepyeeb" method="POST" id="my-form">
       
@@ -122,13 +142,20 @@ provident eveniet cum porro! Rem, nulla.</pre>
               <label for="massage">Massage</label>
               <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
             </div>
-      
+            
             <button type="submit">Submit</button>
           </form>
+          <div id="status"></div>
         </div>
-        <div id="status"></div>
+        <div class="call">
+          <h1 class="callh">Let's Talk</h1>
+          <p class="callp">9020406080</p>
+  </div>
+        
         <script src="enq.js"></script>
-      </section>
+
+        
 </section>
+</main>
 </body>
 </html>

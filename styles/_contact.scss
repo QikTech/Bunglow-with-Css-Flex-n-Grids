@@ -1,51 +1,47 @@
 .contact{
     min-height: 90vh;
-    background: #F2F6FF;
+    // background: #F2F6FF;
+}
+.contactxt{
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
 }
 
-// label{
-//     font-size: 2rem;
-// }
+.contactsections{
+  display: flex;
+}
 
-// * {
-//     padding: 0;
-//     margin: 0;
-//     box-sizing: border-box;
-//   }
-  body {
-    font-family: "Montserrat";
-  }
-  .contacttxt{
-    font-family: 'Dosis', sans-serif;
-    font-weight: 500;
-  }
+.call{
+  flex: 1;
+}
   .enq {
-    height: 100vh;
-    width: 100%;
-    background-color: #F2F6FF;
+    flex: 1;
+    // height: 100vh;
+    // width: 100%;
+    // background-color: #F2F6FF;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
   }
-  .container {
-    width: 90%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0px 0px 20px #00000010;
-    background-color: #F2F6FF;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
+  // .container {
+  //   width: 90%;
+  //   max-width: 500px;
+  //   margin: 0 auto;
+  //   padding: 20px;
+  //   box-shadow: 0px 0px 20px #00000010;
+  //   background-color: #F2F6FF;
+  //   border-radius: 8px;
+  //   margin-bottom: 20px;
+  // }
   .form-group {
-    width: 100%;
+    // width: 100%;
     margin-top: 20px;
     font-size: 20px;
   }
   .form-group input,
   .form-group textarea {
-    width: 100%;
+    // width: 100%;
     padding: 5px;
     font-size: 18px;
     border: 1px solid rgba(128, 128, 128, 0.199);
@@ -56,7 +52,7 @@
     resize: vertical;
   }
   button[type="submit"] {
-    width: 100%;
+    // width: 100%;
     border: none;
     outline: none;
     padding: 20px;
@@ -73,7 +69,7 @@
     background-color: rgb(214, 226, 236);
   }
   #status {
-    width: 90%;
+    // width: 90%;
     max-width: 500px;
     text-align: center;
     padding: 10px;
