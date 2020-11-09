@@ -1,11 +1,10 @@
 .location{
     min-height: 100vh;
-    background: #F2F6FF;
+    background: #000000;
     display: flex;
     flex-wrap: wrap;
     // flex-direction: column-reverse;
     align-items: center;
-    border-radius: 15px;
 }
 
 #map{
@@ -29,13 +28,17 @@
         font-family: 'Merienda', cursive;
         font-weight: 500;
         font-size: 8rem;
+        color: #ffffff;
     }
     .mapp{
         font-family: 'Dosis', sans-serif;
         font-weight: 500;
         font-size: 2.5rem;
-        color: #333;
+        color: #ffffff;
     }
+}
+.mmm{
+    border-radius: 20%;
 }
 .map{
     
