@@ -3,33 +3,37 @@
     background: #F2F6FF;
     display: flex;
     flex-wrap: wrap;
+    // flex-direction: column-reverse;
     align-items: center;
     border-radius: 15px;
 }
 
 #map{
     flex: 1;
-    height: 80vh;
+    height: 70vh;
     margin-left: 8%;
     margin-right: 8%;
     margin-top: 4%;
-    // width: 200px;
+    width: 200px;
 }
+
 .mtxt{
     flex: 1;
+    width: 100%;
+    height: 50%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    .maptxt{
+    .maph{
         font-family: 'Merienda', cursive;
         font-weight: 500;
-        font-size: 6.3vw;
+        font-size: 8rem;
     }
     .mapp{
         font-family: 'Dosis', sans-serif;
         font-weight: 500;
-        font-size: 2vw;
+        font-size: 2.5rem;
         color: #333;
     }
 }
@@ -40,3 +44,102 @@
 .map :hover {
     filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
     }
+
+
+@media screen and (max-width: 1024px){
+    .location{
+        min-height: 80vh;
+        background: #F2F6FF;
+        display: flex;
+        // flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-content: flex-start;
+        align-items: center;
+        justify-items: start;
+        border-radius: 15px;
+    }
+    .mtxt{
+        flex: 1;
+        margin-top: 5%;
+        .maph{
+            text-align: center;
+            font-size: 8rem;
+        }
+        .mapp{
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+    #map{
+        flex: 2;
+        width: 600px;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-top: 4%;
+        margin-bottom: 10%;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .location{
+        min-height: 80vh;
+    }
+    .mtxt{
+        flex: 1;
+        margin-top: 5%;
+        .maph{
+            text-align: center;
+            font-size: 5rem;
+        }
+        .mapp{
+            font-size: 1.5rem;
+        }
+    }
+    #map{
+        flex: 2;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .mtxt{
+        flex: 1;
+        margin-top: 5%;
+        .maph{
+            text-align: center;
+            font-size: 5rem;
+        }
+        .mapp{
+            font-size: 1.5rem;
+        }
+    }
+    #map{
+        flex: 2;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .location{
+        min-height: 80vh;
+    }
+    .mtxt{
+        flex: 1;
+        margin-bottom: -10%;
+        .maph{
+            text-align: center;
+            font-size: 4rem;
+        }
+        .mapp{
+            font-size: 1.2rem;
+        }
+    }
+    #map{
+        flex: 2;
+        margin-bottom: 20%;
+        // margin: 1%;
+        // height: 200px;
+        width: 290px;
+    }
+}

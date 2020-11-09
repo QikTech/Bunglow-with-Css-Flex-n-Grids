@@ -52,7 +52,7 @@ ul {
 
 .home {
   min-height: 50vh;
-  background: RED;
+  background: #011627;
 }
 
 .gallery2 {
@@ -109,8 +109,8 @@ ul {
 
 @media screen and (max-width: 1024px) {
   .gallerycontainer {
-    width: 50em;
-    height: 50em;
+    width: 40em;
+    height: 40em;
     margin-top: 2%;
   }
   .gallery2 {
@@ -132,13 +132,14 @@ ul {
     margin-bottom: 3%;
   }
   .gallerytxt .galleryh {
+    text-align: center;
     font-size: 5rem;
   }
   .mimg {
-    margin-top: 15vh;
     -webkit-box-flex: 5;
         -ms-flex: 5;
             flex: 5;
+    padding-bottom: 70vh;
   }
 }
 
@@ -217,11 +218,17 @@ ul {
         -ms-flex: 0.2;
             flex: 0.2;
   }
+  .gallerytxt .galleryh {
+    font-size: 4rem;
+  }
+  .gallerytxt .galleryp {
+    font-size: 1.2rem;
+  }
   .mimg {
-    margin-top: 22vh;
     -webkit-box-flex: 0.8;
         -ms-flex: 0.8;
             flex: 0.8;
+    padding-bottom: 50vh;
   }
 }
 
@@ -366,16 +373,19 @@ body .gallerycontainer input:checked + [class*='item'] {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 80vh;
+  height: 70vh;
   margin-left: 8%;
   margin-right: 8%;
   margin-top: 4%;
+  width: 200px;
 }
 
 .mtxt {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  width: 100%;
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,16 +400,16 @@ body .gallerycontainer input:checked + [class*='item'] {
           justify-content: center;
 }
 
-.mtxt .maptxt {
+.mtxt .maph {
   font-family: 'Merienda', cursive;
   font-weight: 500;
-  font-size: 6.3vw;
+  font-size: 8rem;
 }
 
 .mtxt .mapp {
   font-family: 'Dosis', sans-serif;
   font-weight: 500;
-  font-size: 2vw;
+  font-size: 2.5rem;
   color: #333;
 }
 
@@ -411,6 +421,124 @@ body .gallerycontainer input:checked + [class*='item'] {
 .map :hover {
   -webkit-filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
           filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
+}
+
+@media screen and (max-width: 1024px) {
+  .location {
+    min-height: 80vh;
+    background: #F2F6FF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: start;
+    border-radius: 15px;
+  }
+  .mtxt {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-top: 5%;
+  }
+  .mtxt .maph {
+    text-align: center;
+    font-size: 8rem;
+  }
+  .mtxt .mapp {
+    text-align: center;
+    font-size: 2rem;
+  }
+  #map {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    width: 600px;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 4%;
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .location {
+    min-height: 80vh;
+  }
+  .mtxt {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-top: 5%;
+  }
+  .mtxt .maph {
+    text-align: center;
+    font-size: 5rem;
+  }
+  .mtxt .mapp {
+    font-size: 1.5rem;
+  }
+  #map {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mtxt {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-top: 5%;
+  }
+  .mtxt .maph {
+    text-align: center;
+    font-size: 5rem;
+  }
+  .mtxt .mapp {
+    font-size: 1.5rem;
+  }
+  #map {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .location {
+    min-height: 80vh;
+  }
+  .mtxt {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-bottom: -10%;
+  }
+  .mtxt .maph {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .mtxt .mapp {
+    font-size: 1.2rem;
+  }
+  #map {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    margin-bottom: 20%;
+    width: 290px;
+  }
 }
 
 .contact {
@@ -647,16 +775,14 @@ button[type="submit"]:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #F2F6FF;
+  background-color: #fca311;
 }
 
-.itemstxt {
+.nearbytxt {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -669,20 +795,19 @@ button[type="submit"]:hover {
   text-align: center;
 }
 
-.itemstxt .nearbyh {
+.nearbytxt .nearbyh {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
   font-family: 'Merienda', cursive;
   font-weight: 500;
-  font-size: 6.5vw;
+  font-size: 8rem;
 }
 
-.itemstxt .nearbyp {
+.nearbytxt .nearbyp {
   font-family: 'Dosis', sans-serif;
   font-weight: 400;
-  font-size: 2vw;
-  color: grey;
+  font-size: 4rem;
 }
 
 .minigallery {
@@ -694,51 +819,38 @@ button[type="submit"]:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-bottom: 3%;
-  position: relative;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
-}
-
-.minigallery .c1, .minigallery .c2, .minigallery .c3, .minigallery .c4 {
-  margin: 2%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 5px;
 }
 
 .minigallery .card {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  justify-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #F2F6FF;
-  padding: 1vw;
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
 }
 
 .minigallery .cardimg {
-  margin-top: 2%;
-  width: 30%;
-  padding: 2% 0% 2% 0;
+  position: absolute;
+  top: 2px;
+  margin-top: -10%;
+  margin-left: -2%;
+  width: 55%;
+  border-radius: 10px 10px;
 }
 
 .minigallery .cardtxt {
+  width: 40%;
+  margin-left: 57%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -748,9 +860,14 @@ button[type="submit"]:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  justify-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  align-items: center;
 }
 
 .minigallery .cardh {
@@ -771,26 +888,45 @@ button[type="submit"]:hover {
   overflow: hidden;
 }
 
-.nearbyplaces ::-webkit-scrollbar {
-  width: 1em;
-}
-
-.nearbyplaces ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-.nearbyplaces ::-webkit-scrollbar-thumb {
-  background-color: #333;
-  outline: 1px solid slategrey;
-}
-
-@media (max-width: 768px) {
-  .nearbyplaces {
+@media screen and (max-width: 1024px) {
+  .card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 8%;
+  }
+  .cardtxt {
+    text-align: center;
+    margin-top: 8%;
+  }
+  .cardtxt .nearbyh {
+    font-size: 6rem;
+  }
+  .cardtxt .nearbyp {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .nearbyplaces {
+    min-height: 120vh;
+  }
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cardtxt {
+    text-align: center;
+    margin-top: 12%;
+  }
+  .nearbytxt .nearbyh {
+    font-size: 4rem;
+  }
+  .nearbytxt .nearbyp {
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

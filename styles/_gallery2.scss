@@ -35,9 +35,8 @@
 
 @media screen and (max-width: 1024px){
   .gallerycontainer{
-    // @include cc();
-    width: 50em;
-    height: 50em;
+    width: 40em;
+    height: 40em;
     margin-top: 2%;
   }
   .gallery2{
@@ -55,12 +54,13 @@
     margin-top: 15vh;
     margin-bottom: 3%;
     .galleryh{
+      text-align: center;
       font-size: 5rem;
     }
   }
   .mimg{
-    margin-top: 15vh;
     flex: 5;
+    padding-bottom: 70vh;
   }
 }
 
@@ -126,18 +126,20 @@
 @media screen and (max-width: 414px){
   .gallery2{
     min-height: 60vh;
-    // margin-top: 5vh;
   }
   .gallerytxt{
     text-align: center;
-    // margin-top: 12vh;
     flex: 0.2;
     .galleryh{
+      font-size: 4rem;
+    }
+    .galleryp{
+      font-size: 1.2rem;
     }
   }
   .mimg{
-    margin-top: 22vh;
     flex: 0.8;
+    padding-bottom: 50vh;
   }
 }
 
