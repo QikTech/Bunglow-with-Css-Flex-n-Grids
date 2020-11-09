@@ -51,8 +51,8 @@ ul {
 }
 
 .home {
-  min-height: 100vh;
-  background: #F2F6FF;
+  min-height: 50vh;
+  background: RED;
 }
 
 .gallery2 {
@@ -66,7 +66,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #F2F6FF;
+  background: white;
 }
 
 .gallerytxt {
@@ -82,28 +82,147 @@ ul {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  text-align: left;
   text-align: center;
 }
 
 .gallerytxt .galleryh {
   font-family: 'Merienda', cursive;
   font-weight: 500;
-  font-size: 7rem;
+  font-size: 9rem;
 }
 
 .gallerytxt .galleryp {
   font-family: 'Dosis', sans-serif;
   font-weight: 500;
-  font-size: 2vw;
+  font-size: 2rem;
   color: #333;
 }
 
 .mimg {
-  -webkit-box-flex: 1.5;
-      -ms-flex: 1.5;
-          flex: 1.5;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   position: relative;
   margin-top: 5vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .gallerycontainer {
+    width: 50em;
+    height: 50em;
+    margin-top: 2%;
+  }
+  .gallery2 {
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .gallerytxt {
+    text-align: center;
+    -webkit-box-flex: 0.5;
+        -ms-flex: 0.5;
+            flex: 0.5;
+    width: 100%;
+    margin-top: 15vh;
+    margin-bottom: 3%;
+  }
+  .gallerytxt .galleryh {
+    font-size: 5rem;
+  }
+  .mimg {
+    margin-top: 15vh;
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .gallerytxt {
+    text-align: center;
+    -webkit-box-flex: 0.5;
+        -ms-flex: 0.5;
+            flex: 0.5;
+    width: 100%;
+    margin-top: 15vh;
+    margin-bottom: 3%;
+    margin-left: 5%;
+  }
+  .gallerytxt .galleryh {
+    font-size: 6rem;
+  }
+  .gallerytxt .galleryp {
+    font-size: 2rem;
+  }
+  .mimg {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    font-size: 0.2vmin;
+  }
+  .gallerycontainer {
+    width: 50em;
+    height: 50em;
+    margin-top: 2%;
+  }
+  .gallery2 {
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .gallerytxt {
+    text-align: center;
+    -webkit-box-flex: 0.5;
+        -ms-flex: 0.5;
+            flex: 0.5;
+    width: 100%;
+    margin-top: 15vh;
+    margin-bottom: 3%;
+  }
+  .gallerytxt .galleryh {
+    font-size: 5rem;
+  }
+  .mimg {
+    margin-top: 0;
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .gallery2 {
+    min-height: 60vh;
+  }
+  .gallerytxt {
+    text-align: center;
+    -webkit-box-flex: 0.2;
+        -ms-flex: 0.2;
+            flex: 0.2;
+  }
+  .mimg {
+    margin-top: 22vh;
+    -webkit-box-flex: 0.8;
+        -ms-flex: 0.8;
+            flex: 0.8;
+  }
 }
 
 label {
@@ -121,17 +240,11 @@ label {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 body {
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
   font-size: 1vmin;
-  font-family: "Open Sans", sans-serif;
 }
 
 body .message {
@@ -157,8 +270,8 @@ body .gallerycontainer {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 40vw;
-  height: 80vh;
+  width: 80em;
+  height: 80em;
   margin-top: 2%;
 }
 
@@ -486,12 +599,6 @@ button[type="submit"]:hover {
 }
 
 @media (max-width: 450px) {
-  .navbar-menu {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .nav-container {
     padding: 1px;
   }

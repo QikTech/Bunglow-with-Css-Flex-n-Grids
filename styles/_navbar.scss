@@ -41,7 +41,8 @@
 
   @media (max-width: 450px) {
     .navbar-menu {
-      flex-direction: column;
+      // flex-direction: column;
+      // flex-wrap: wrap;
     }
     .nav-container{
       padding: 1px;
