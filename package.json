@@ -1,0 +1,23 @@
+{
+  "name": "Bunglow-with-Css-Flex-n-Grids",
+  "version": "1.0.0",
+  "description": "",
+  "main": "enq.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QikTech/Bunglow-with-Css-Flex-n-Grids.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QikTech/Bunglow-with-Css-Flex-n-Grids/issues"
+  },
+  "homepage": "https://github.com/QikTech/Bunglow-with-Css-Flex-n-Grids#readme",
+  "dependencies": {
+    "locomotive-scroll": "^3.6.1"
+  }
+}
