@@ -52,7 +52,7 @@ ul {
 
 .home {
   min-height: 50vh;
-  background: #020202;
+  background: #011627;
 }
 
 .gallery2 {
@@ -66,7 +66,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #fca311;
+  background: white;
 }
 
 .gallerytxt {
@@ -357,7 +357,7 @@ body .gallerycontainer input:checked + [class*='item'] {
 
 .location {
   min-height: 100vh;
-  background: #000000;
+  background: #F2F6FF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,6 +366,7 @@ body .gallerycontainer input:checked + [class*='item'] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 15px;
 }
 
 #map {
@@ -403,14 +404,17 @@ body .gallerycontainer input:checked + [class*='item'] {
   font-family: 'Merienda', cursive;
   font-weight: 500;
   font-size: 8rem;
-  color: #ffffff;
 }
 
 .mtxt .mapp {
   font-family: 'Dosis', sans-serif;
   font-weight: 500;
   font-size: 2.5rem;
+<<<<<<< HEAD
   color: #ffffff;
+=======
+  color: #333;
+>>>>>>> parent of c751964... Full Responsive v1
 }
 
 .map {
@@ -542,69 +546,33 @@ body .gallerycontainer input:checked + [class*='item'] {
 
 .contact {
   min-height: 90vh;
-  background: #020202;
 }
 
 .contactxt {
+<<<<<<< HEAD
   font-weight: 400;
+=======
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+>>>>>>> parent of c751964... Full Responsive v1
 }
 
 .contactsections {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin: 0;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
 }
 
 .call {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 10%;
-  border-radius: 20px;
-  background-color: #ffffff;
-  color: #F2F6FF;
-  text-align: center;
-}
-
-.call .callh {
-  font-size: 6rem;
-  color: #000000;
-}
-
-.call .callp {
-  font-size: 7rem;
-  color: #000000;
 }
 
 .enq {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin: 6% 5% 5% 5%;
-  border-radius: 30px;
-  background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,17 +588,6 @@ input[type=number] {
           flex-direction: column;
 }
 
-input {
-  border: none;
-  border-bottom: 1px solid #F2F6FF;
-  background-color: #000000;
-  color: white;
-}
-
-label {
-  color: white;
-}
-
 .form-group {
   margin-top: 20px;
   font-size: 20px;
@@ -640,6 +597,7 @@ label {
 .form-group textarea {
   padding: 5px;
   font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
   margin-top: 5px;
 }
 
@@ -650,12 +608,11 @@ textarea {
 button[type="submit"] {
   border: none;
   outline: none;
-  padding: 10px;
-  font-size: 2rem;
-  border-radius: 5px;
-  font-family: "poppins";
-  background-color: #ffffff;
-  color: #000000;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  color: #1ba6f7;
   text-align: center;
   cursor: pointer;
   margin-top: 10px;
@@ -664,7 +621,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #000000;
+  background-color: #d6e2ec;
 }
 
 #status {
@@ -676,13 +633,13 @@ button[type="submit"]:hover {
 }
 
 #status.success {
-  background-color: #ffffff;
-  -webkit-animation: status 10s ease forwards;
-          animation: status 10s ease forwards;
+  background-color: #d3fa99;
+  -webkit-animation: status 4s ease forwards;
+          animation: status 4s ease forwards;
 }
 
 #status.error {
-  background-color: #ffffff;
+  background-color: #fa815c;
   color: white;
   -webkit-animation: status 4s ease forwards;
           animation: status 4s ease forwards;
@@ -732,7 +689,7 @@ button[type="submit"]:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffffff;
+  background-color: #F2F6FF;
   padding: 10px;
   -webkit-filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
           filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.2));
@@ -751,7 +708,7 @@ button[type="submit"]:hover {
       -ms-flex: 1;
           flex: 1;
   font-size: 3rem;
-  color: #000000;
+  color: #020202;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -766,7 +723,7 @@ button[type="submit"]:hover {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
-  background-color: #ffffff;
+  background-color: #F2F6FF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -790,7 +747,7 @@ button[type="submit"]:hover {
 }
 
 .navbar-menu > .item::after {
-  background-color: #000000;
+  background-color: #333333;
   bottom: 0;
   height: 4px;
   left: 0;
@@ -874,7 +831,6 @@ button[type="submit"]:hover {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-radius: 5px;
-  margin-bottom: 5%;
 }
 
 .minigallery .card {
