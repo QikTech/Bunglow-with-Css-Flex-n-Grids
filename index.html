@@ -9,11 +9,10 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
-  <script src="index.js"></script>
     <!-- <main> -->
 <!-- NAVIGATION BAR -->
-<main data-scroll-container>
-    <section class="nav-container" id="0" data-scroll-section>
+<main>
+    <section class="nav-container" id="0">
         <h2 class="title">Vandana Bunglow</h2>
         <ul class="navbar-menu -material">
              <li class="item"><a class="link" href="#1">Home</a></li>
@@ -29,14 +28,10 @@
 <!-- NEVAGATION BAR ENDS -->
 
 <!-- GALLERY SECTION -->
-<<<<<<< HEAD
-<section class="gallery2" id="2" data-scroll-section> 
-=======
-<!-- <section class="gallery2" id="2"> 
->>>>>>> parent of c751964... Full Responsive v1
+<section class="gallery2" id="2"> 
   <div class="gallerytxt">
-    <h1 class="galleryh" data-scroll>Photo Gallery</h1>
-    <pre class="galleryp" data-scroll>Lorem ipsum dolor sit amet consectetur,
+    <h1 class="galleryh">Photo Gallery</h1>
+    <pre class="galleryp">Lorem ipsum dolor sit amet consectetur,
 adipisicing elit.
 Et enim ex dolorem dignissimos debitis,
 provident eveniet cum porro! Rem, nulla.</pre>
@@ -54,11 +49,11 @@ provident eveniet cum porro! Rem, nulla.</pre>
     <input id="item9" type="checkbox" /><label class="item9" for="item9" style="background-image:url(https://picsum.photos/750/750?image=509);"></label>
 </div>
 </div>
-</section> -->
+</section>
 <!-- GALLERY SECTION ENDS -->
 
 <!-- LOCATION SECTION -->
-<section class="location" id=3 data-scroll-section>
+<section class="location" id=3>
         <div id="map" class="map">
           <Script>
             function initMap(){
@@ -69,7 +64,7 @@ provident eveniet cum porro! Rem, nulla.</pre>
               var map = new google.maps.Map(document.getElementById('map'), options);
             }
           </Script>
-          <script
+          <script 
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASx2V6CA7vXhR00gOqPYYc54cdhpWrxko&callback=initMap&libraries=&v=weekly"
           defer
         ></script>
@@ -85,7 +80,7 @@ provident eveniet cum porro! Rem, nulla.</pre>
 <!-- LOCATION ENDS -->
 
 <!-- NEARBY PLACES SECTION -->
-<section class="nearbyplaces" id="4" data-scroll-section>
+<section class="nearbyplaces" id="4">
     <div class="nearbytxt">
           <h1 class="nearbyh">Nearby Places</h1>
           <p class="nearbyp">Places you might visit when you are in Vandana Bunglow</p>
@@ -120,53 +115,68 @@ provident eveniet cum porro! Rem, nulla.</pre>
 <!-- NEARBY PLACES SECTION  ENDS-->
 
 <!-- CONTACT SECTION -->
-<<<<<<< HEAD
-<section class="contact" id="5" data-scroll-section>
+<section class="contact" id="5">
   <!-- <div class="contactxt">
-=======
-<!-- <section class="contact" id="5">
-  <div class="contactxt">
->>>>>>> parent of c751964... Full Responsive v1
     <h3 class="contacth">Contact Form</h3>
-  </div>
+  </div> -->
     
-  <div class="contactsections"></div>
-        <div class="enq">
-          <form action="https://formspree.io/f/mgepyeeb" method="POST" id="my-form">
-      
-            <div class="form-group">
-              <label for="firstName"> First Name</label>
-              <input type="text" id="firstName" name="firstName">
-            </div>
-      
-            <div class="form-group">
-              <label for="latsName">Last Name</label>
-              <input type="text" id="lastName" name="lastName">
-            </div>
-      
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email">
-            </div>
-      
-            <div class="form-group">
-              <label for="massage">Massage</label>
-              <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
-            </div>
-            
-            <button type="submit">Submit</button>
-          </form>
-          <div id="status"></div>
-        </div>
-        <div class="call">
-          <h1 class="callh">Let's Talk</h1>
-          <p class="callp">9020406080</p>
-  </div>
-        
-        <script src="enq.js"></script>
+  <div class="contactsections">
+          <div class="enq">
+                  <h3 class="contacth">Contact Form</h3>
+                  <form action="https://formspree.io/f/mgepyeeb" method="POST" id="my-form">
+                  
+                    <div class="form-group">
+                      <label for="firstName"> Full Name</label><br>
+                      <input type="text" id="firstName" name="firstName">
+                    </div>
+                  
+                    <div class="form-group">
+                      <label for="latsName">Contact Number</label><br>
+                      <input type="number" id="lastName" name="lastName">
+                    </div>
+                  
+                    <div class="form-group">
+                      <label for="email">Email</label><br>
+                      <input type="email" id="email" name="email">
+                    </div><br>
+                  
+                    <div class="form-group">
+                    <label for="days">Looking For</label><br>
+                    <select id="message" name="Looking For">
+                    <option value="1day">1 Day</option>
+                    <option value="2day">2 Days</option>
+                    <option value="3day">3 Days</option>
+                    <option value="4day">4 Days</option>
+                    <option value="5day">5 Days</option>
+                    <option value="6day">6 Days</option>
+                    <option value="7day">1 Week</option>
+                    <option value="more">More than a week</option>
+                    </select>
+                  </div> <br>
 
+                    <!-- <div class="form-group">
+                      <label for="massage">Massage</label><br>
+                      <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                    </div> -->
+                    
+
+
+
+                    <button type="submit">Submit</button>
+                  </form><br>
+                  <div id="status"></div>
+          </div>
+          <div class="call">
+                <pre class="callh">Or
+Direct
+Call</pre>
+                <p class="callp">9020406080</p>
+          </div>
+  </div>
+   
         
-</section> -->
+        <script src="enq.js"></script> 
+</section>
 <!-- CONTACT SECTION ENDS -->
 </main>
 </body>
