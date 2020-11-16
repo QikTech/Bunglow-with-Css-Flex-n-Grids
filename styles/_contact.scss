@@ -1,130 +1,153 @@
 .contact{
-    min-height: 90vh;
-    background: #020202;
+  min-height: 180vh;
+  background: #020202;
 }
 .contactxt{
-  font-family: 'Dosis', sans-serif;
-  font-weight: 400;
+font-family: 'Dosis', sans-serif;
+font-weight: 400;
 }
 
 .contactsections{
-  display: flex;
-  flex-wrap: wrap;
+  font-family: 'Dosis', sans-serif;
+font-weight: 500;
+display: flex;
+flex-wrap: wrap;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; 
 }
 input[type=number] {
-  -moz-appearance:textfield;
+-moz-appearance:textfield;
 }
 
 .call{
+flex: 1;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: 10%;
+border-radius: 20px;
+background-color: #ffffff;
+color: #F2F6FF;
+text-align: center;
+.callh{
+  font-size: 6rem;
+  color: #000000;
+}
+.callp{
+  font-size: 7rem;
+  color: #000000;
+}
+}
+.enq {
   flex: 1;
+  margin: 6% 5% 5% 5%;
+  border-radius: 30px;
+  background-color: #000000;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 10%;
-  border-radius: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+input {
+  border: none;
+  border-bottom: 1px solid #F2F6FF;
+  background-color: #000000;
+  color: white;
+}
+label {
+  color: white;
+}
+.form-group {
+  // width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+  // width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  // border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+button[type="submit"] {
+  // width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 5px;
+  // font-family: "poppins";
   background-color: #ffffff;
-  color: #F2F6FF;
+  color: #000000;
   text-align: center;
-  .callh{
-    font-size: 6rem;
-    color: #000000;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+button[type="submit"]:hover {
+  background-color: #cac8c8
+}
+#status {
+  // width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: #ffffff;
+  font-size: 1.5rem;
+  // width: 40%;
+  // margin-top: 10px;
+  animation: status 2s ease forwards;
+}
+#status.error {
+  font-size: 1.5rem;
+  background-color: #d00a0a;
+  color: white;
+  animation: status 2s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
   }
-  .callp{
-    font-size: 7rem;
-    color: #000000;
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
   }
 }
-  .enq {
+
+.mtxt{
+  font-size: 2rem;
+}
+.maph{
+  text-align: center;
+  color: #ffffff;
+}
+#map{
     flex: 1;
-    margin: 6% 5% 5% 5%;
-    border-radius: 30px;
-    background-color: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-  input {
-    border: none;
-    border-bottom: 1px solid #F2F6FF;
-    background-color: #000000;
-    color: white;
-  }
-  label {
-    color: white;
-  }
-  .form-group {
-    // width: 100%;
-    margin-top: 20px;
-    font-size: 20px;
-  }
-  .form-group input,
-  .form-group textarea {
-    // width: 100%;
-    padding: 5px;
-    font-size: 18px;
-    // border: 1px solid rgba(128, 128, 128, 0.199);
-    margin-top: 5px;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  button[type="submit"] {
-    // width: 100%;
-    border: none;
-    outline: none;
-    padding: 10px;
-    font-size: 2rem;
-    border-radius: 5px;
-    font-family: "poppins";
-    background-color: #ffffff;
-    color: #000000;
-    text-align: center;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: 0.3s ease background-color;
-  }
-  button[type="submit"]:hover {
-    background-color: #000000
-  }
-  #status {
-    // width: 90%;
-    max-width: 500px;
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto;
-    border-radius: 8px;
-  }
-  #status.success {
-    background-color: #ffffff;
-    animation: status 10s ease forwards;
-  }
-  #status.error {
-    background-color: #ffffff;
-    color: white;
-    animation: status 4s ease forwards;
-  }
-  @keyframes status {
-    0% {
-      opacity: 1;
-      pointer-events: all;
-    }
-    90% {
-      opacity: 1;
-      pointer-events: all;
-    }
-    100% {
-      opacity: 0;
-      pointer-events: none;
-    }
-  }
-  
+    height: 50vh;
+    width: 90vw;
+    margin: auto;
+    // margin-left: 8%;
+    // margin-right: 8%;
+    // margin-top: 4%;
+    // width: 200px;
+}
