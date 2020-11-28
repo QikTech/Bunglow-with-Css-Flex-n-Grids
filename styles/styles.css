@@ -51,7 +51,7 @@ ul {
 }
 
 .home {
-  min-height: 50vh;
+  min-height: 100vh;
   background: #020202;
 }
 
@@ -413,7 +413,7 @@ input[type=number] {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 10%;
-  border-radius: 20px;
+  border-radius: 15px;
   background-color: #ffffff;
   color: #F2F6FF;
   text-align: center;
@@ -422,10 +422,12 @@ input[type=number] {
 .call .callh {
   font-size: 6rem;
   color: #000000;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
 }
 
 .call .callp {
-  font-size: 7rem;
+  font-size: 6rem;
   color: #000000;
 }
 
@@ -566,6 +568,17 @@ button[type="submit"]:hover {
   height: 50vh;
   width: 90vw;
   margin: auto;
+}
+
+@media screen and (max-width: 414px) {
+  .callh {
+    font-size: 1rem;
+    color: #000000;
+  }
+  .callp {
+    font-size: 1rem;
+    color: #000000;
+  }
 }
 
 .nav-container {
@@ -824,7 +837,7 @@ button[type="submit"]:hover {
     margin-top: 12%;
   }
   .nearbytxt .nearbyh {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .nearbytxt .nearbyp {
     font-size: 1.8rem;
